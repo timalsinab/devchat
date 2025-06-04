@@ -23,7 +23,7 @@ DevChat is a real-time chat application built with a Node.js and Express backend
 ```bash
 git clone https://github.com/timalsinab/devchat.git
 cd devchat
-````
+```
 
 ### 2. Start the server
 
