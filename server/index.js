@@ -45,6 +45,16 @@ io.on('connection', (socket) => {
     }
   });
 
+  // Handle a user leaving a room without disconnecting
+  socket.on('leave_room', ({ room }) => {
+    const user = users[socket.id];
+    if (user) {
+      socket.leave(room);
+      socket.to(room).emit('user_left', `${user.username} left the room.`);
+      delete users[socket.id];
+    }
+  });
+
   socket.on('disconnect', () => {
     const user = users[socket.id];
     if (user) {
