@@ -57,3 +57,8 @@ devchat/
 
 * Bishal Timalsina
 
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues to
+suggest new features or report bugs.
+
